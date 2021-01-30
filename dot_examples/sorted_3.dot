@@ -1,0 +1,15 @@
+digraph G {
+ depth0_1_0 [label = "el1>el0"];
+ depth0_1_0True_depth1_2_1 [label = "el2>el1"];
+  depth0_1_0->depth0_1_0True_depth1_2_1 [label = "3"];
+ depth0_1_0False_depth1_2_1 [label = "el2>el1"];
+  depth0_1_0->depth0_1_0False_depth1_2_1 [label = "3"];
+ depth0_1_0True_depth1_2_1False_depth2_2_1 [label = "el2>el1"];
+  depth0_1_0True_depth1_2_1->depth0_1_0True_depth1_2_1False_depth2_2_1 [label = "2"];
+ depth0_1_0False_depth1_2_1True_depth2_2_0 [label = "el2>el0"];
+  depth0_1_0False_depth1_2_1->depth0_1_0False_depth1_2_1True_depth2_2_0 [label = "2"];
+ depth0_1_0True_depth1_2_1False_depth2_2_1False_depth3_2_0 [label = "el2>el0"];
+  depth0_1_0True_depth1_2_1False_depth2_2_1->depth0_1_0True_depth1_2_1False_depth2_2_1False_depth3_2_0 [label = "2"];
+ depth0_1_0False_depth1_2_1True_depth2_2_0False_depth3_2_1 [label = "el2>el1"];
+  depth0_1_0False_depth1_2_1True_depth2_2_0->depth0_1_0False_depth1_2_1True_depth2_2_0False_depth3_2_1 [label = "1"];
+}
